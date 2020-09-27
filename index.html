@@ -6,8 +6,41 @@
   <title>task1-3</title>
 </head>
 <body>
-  
+
   <script>
+    'use strict';
+    
+    console.log('--------------------');
+    console.log('現在持っているタスク一覧');
+    console.log('--------------------');
+    
+    
+    let todo = ['掃除', '買い物', '散歩'];
+
+   for (let i = 0; i < todo.length; i++) {
+     console.log(`${i}: ${todo[i]}`);
+   }
+    
+    // todo.forEach(item => {
+    // console.log(item);
+    // });
+
+    
+    var list = prompt('タスクを入力してください');
+    alert('新しいタスクを追加しました');
+    
+    todo.push(list);
+    console.log('--------------------');
+    console.log('現在持っているタスク一覧');
+    console.log('--------------------');
+    // todo.forEach(item => {
+    // console.log(item);
+    // });
+    for (let i = 0; i < todo.length; i++) {
+     console.log(`${i}: ${todo[i]}`);
+   }
+    var list = prompt('「確認、追加、削除、終了」の4つのいずれかを入力してください');
+
 
   </script>
 </body>
