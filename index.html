@@ -6,9 +6,25 @@
   <title>task1-3</title>
 </head>
 <body>
-  
   <script>
-
+    'use strict';
+    console.log('--------------------');
+    console.log('現在持っているタスク一覧');
+    console.log('--------------------');
+    const todo = ['掃除', '買い物', '散歩'];
+    for (let i = 0; i < todo.length; i++) {
+    console.log(`${i}: ${todo[i]}`);
+   }
+    const list = prompt('タスクを入力してください');
+    alert('新しいタスクを追加しました');
+    todo.push(list);
+    console.log('--------------------');
+    console.log('現在持っているタスク一覧');
+    console.log('--------------------');
+    for (let i = 0; i < todo.length; i++) {
+    console.log(`${i}: ${todo[i]}`);
+   }
+    const lists = prompt('「確認、追加、削除、終了」の4つのいずれかを入力してください');
   </script>
 </body>
 </html>
